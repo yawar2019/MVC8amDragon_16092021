@@ -9,7 +9,7 @@ namespace MVC8amDragon_16092021.Controllers
 {
     public class NewController : Controller
     {
-        // GET: New
+        // GET: Krishna taken latest
        public int LuckyNumber()
         {
 
