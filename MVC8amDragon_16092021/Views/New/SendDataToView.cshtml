@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "SendDataToView";
+}
+
+<h2>SendDataToView</h2>
+<table class="table">
+    <tr>
+        <td><input type="text" name="num1" value="" /></td>
+        <td><input type="text" name="num2" value="" /></td>
+        <td><input type="text" name="num3" value="" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="num1" value="" /></td>
+        <td><input type="text" name="num2" value="" /></td>
+        <td><input type="text" name="num3" value="" /></td>
+    </tr>
+</table>
+
+
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $("input").change()
+    {
+        $('.table').on('click',function(){
+        
+            var currRow = $(this).closest('tr');
+            var col1 = currRow.find('td:eq(0)').val();
+            var col2 = currRow.find('td:eq(1)').val();
+            var col3 = parseFloat(col1) + parseFloat(col2)
+            alert(col3);
+        })
+    
+
+    }
+</script>
