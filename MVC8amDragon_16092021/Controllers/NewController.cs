@@ -68,7 +68,7 @@ namespace MVC8amDragon_16092021.Controllers
             EmployeeModel emp2 = new Models.EmployeeModel();
             emp2.EmpId = 3;
             emp2.EmpName = "sabir";
-            emp2.EmpSalary = 13202020;
+            emp2.EmpSalary = 13202020;//sfsdfsd
 
             listEmp.Add(emp);
             listEmp.Add(emp1);
