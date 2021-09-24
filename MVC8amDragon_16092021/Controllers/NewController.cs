@@ -35,7 +35,7 @@ namespace MVC8amDragon_16092021.Controllers
         public ActionResult SendDataToView()
         {
 
-            ViewBag.LastName = "Shilpa";
+            ViewBag.LastName = "shetty";
 
             return View();
         }
