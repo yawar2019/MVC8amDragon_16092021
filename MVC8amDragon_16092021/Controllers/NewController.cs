@@ -149,5 +149,9 @@ namespace MVC8amDragon_16092021.Controllers
             return Redirect("~/New/getMeView/1");
         }
 
+        public RedirectToRouteResult RedirectUsingRoute()
+        {
+            return RedirectToRoute("Default124");
+        }
     }
 }
