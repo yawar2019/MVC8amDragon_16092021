@@ -1,7 +1,30 @@
-﻿
+﻿@model List<MVC8amDragon_16092021.Models.CustomControl>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
-
+<form action="~/Default/index" method="post">
+    <table>
+        @for(int i=0;i<Model.Count;i++)
+        {
+            <tr>
+                <td>
+                    <label>@Model[i].FieldName</label>
+                </td>
+                <td>
+                    @if (Model[i].FieldType != "Dropdown")
+                    {
+                    <input type="@Model[i].FieldType" name="@Model[i].FieldName"   />
+                    }
+                   @if(Model[i].FieldType == "Dropdown")
+                    {
+                        @Html.DropDownList(Model[i].FieldName)
+                    }
+                     
+                </td>
+            </tr>
+        }
+    </table>
+    <input type="submit" name="name" value="Save" />
+</form>
